@@ -1,0 +1,1 @@
+a=16;function b(a){return new Uint8Array(a)}function c(a){return crypto.getRandomValues(b(a))}d=c(a),e=b(a),f=c(a);for(g=0;g<a;g++){e[g]=d[g]^e[g-1]^f[g]}function h(a){return btoa(String.fromCharCode(...a))}console.log(h(d),h(e),h(f))

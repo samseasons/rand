@@ -1,0 +1,1 @@
+a='',b='',c='';function d(a){return Uint8Array.from(atob(a),a=>a.charCodeAt())}b=d(b),c=d(c),e=b.length,f=new Uint8Array(e);for(g=0;g<e;g++){f[g]=b[g]^c[g]^b[g-1]}function h(a){return btoa(String.fromCharCode(...a))}console.log(a==h(f))
